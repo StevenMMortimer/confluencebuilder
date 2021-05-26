@@ -138,7 +138,7 @@ class Rest:
             # [1]: https://developer.atlassian.com/cloud/confluence/rest/#api-content-id-child-attachment-post
             # [2]: https://developer.atlassian.com/server/jira/platform/form-token-handling/
             if files:
-                headers['X-Atlassian-Token'] = 'nocheck'
+               headers['X-Atlassian-Token'] = 'no-check'
 
             rsp = self.session.post(
                 restUrl, json=data, files=files, headers=headers)
